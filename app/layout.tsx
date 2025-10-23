@@ -1,10 +1,9 @@
-import type { Metadata } from 'next'
-import { Geist, Geist_Mono } from 'next/font/google'
-import { Analytics } from '@vercel/analytics/next'
-import './globals.css'
+import type { Metadata } from "next"
+import { Montserrat } from "next/font/google"
+import { Analytics } from "@vercel/analytics/next"
+import "./globals.css"
 
-const _geist = Geist({ subsets: ["latin"] });
-const _geistMono = Geist_Mono({ subsets: ["latin"] });
+const montserrat = Montserrat({ subsets: ["latin", "latin-ext", "vietnamese"], display: "swap" })
 
 export const metadata: Metadata = {
   title: 'Ordinaire Sofa',
@@ -19,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`font-sans antialiased`}>
+      <body className={`${montserrat.className} font-sans antialiased`}>
         {children}
         <Analytics />
       </body>

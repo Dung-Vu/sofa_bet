@@ -4,23 +4,27 @@ import { Heart, Leaf, Shield, Zap } from "lucide-react"
 const benefits = [
   {
     icon: Heart,
-    title: "Pet-Approved Comfort",
-    description: "Designed with your pet's needs in mind. Ergonomic support for better sleep and relaxation.",
+    title: "Thoải mái & an toàn cho thú cưng",
+    description:
+      "Thiết kế dựa trên hành vi và tư thế nghỉ ngơi của thú cưng. Hình dáng công thái học giúp thư giãn cơ thể và hỗ trợ giấc ngủ sâu.",
   },
   {
     icon: Leaf,
-    title: "Eco-Friendly Materials",
-    description: "Sustainable fabrics and responsibly sourced materials that are safe for your pet.",
+    title: "Chất liệu thân thiện môi trường",
+    description:
+      "Sử dụng vải bền vững và được sản xuất có trách nhiệm, an toàn cho thú cưng và hành tinh.",
   },
   {
     icon: Shield,
-    title: "Durable & Easy to Clean",
-    description: "Premium fabrics resist stains and odors. Machine-washable covers for hassle-free maintenance.",
+    title: "Bền bỉ & dễ vệ sinh",
+    description:
+      "Vải hiệu suất cao, chống bẩn và có thể giặt bằng máy — giúp việc làm sạch trở nên nhẹ nhàng.",
   },
   {
     icon: Zap,
-    title: "Lifetime Support",
-    description: "Comprehensive warranty and dedicated customer support to ensure your satisfaction.",
+    title: "Bảo hành trọn đời",
+    description:
+      "Dịch vụ hậu mãi tận tâm và bảo hành toàn diện đảm bảo sự hài lòng tuyệt đối.",
   },
 ]
 
@@ -29,9 +33,11 @@ export function Benefits() {
     <section id="benefits" className="py-20 md:py-32">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 text-balance">Why Choose Sofa for Pet?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 text-balance">
+            Vì Sao Nên Chọn Sofa Cho Thú Cưng?
+          </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            We're committed to providing the best experience for you and your furry companion.
+            Chúng tôi cam kết mang đến trải nghiệm tốt nhất cho bạn và người bạn đồng hành của mình.
           </p>
         </div>
 

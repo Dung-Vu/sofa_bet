@@ -4,22 +4,22 @@ import { Star } from "lucide-react"
 const testimonials = [
   {
     name: "Sarah Johnson",
-    pet: "Golden Retriever - Max",
-    text: "Max absolutely loves his new sofa! The quality is exceptional and it looks beautiful in our living room. Highly recommend!",
+    pet: "Golden Retriever – Max",
+    text: "Max rất thích chiếc sofa mới của mình! Chất lượng vượt trội và trông thật tuyệt trong phòng khách. Rất đáng mua!",
     rating: 5,
     image: "/happy-pet-owner-portrait.jpg",
   },
   {
     name: "Michael Chen",
-    pet: "Cat - Luna",
-    text: "Luna has claimed this sofa as her own. The fabric is so soft and durable. Best investment for my pet!",
+    pet: "Mèo – Luna",
+    text: "Luna chiếm luôn chiếc sofa này rồi! Vải cực kỳ mềm và bền. Mua đáng đồng tiền nhất cho thú cưng!",
     rating: 5,
     image: "/happy-pet-owner-portrait.jpg",
   },
   {
-    name: "Emma Rodriguez",
-    pet: "Dachshund - Buddy",
-    text: "The orthopedic support is amazing. Buddy's arthritis has improved and he's more active. Thank you!",
+    name: "Emma Rodríguez",
+    pet: "Dachshund – Buddy",
+    text: "Chiếc ghế này thật tuyệt! Chứng viêm khớp của Buddy đã cải thiện rõ rệt và cậu ấy vận động nhiều hơn. Cảm ơn rất nhiều!",
     rating: 5,
     image: "/happy-pet-owner-portrait.jpg",
   },
@@ -30,9 +30,11 @@ export function Testimonials() {
     <section id="testimonials" className="py-20 md:py-32 bg-muted/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 text-balance">Loved by Pet Parents</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 text-balance">
+            Được Yêu Thích Bởi Các “Bố Mẹ Thú Cưng”
+          </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            See what our happy customers have to say about their Sofa for Pet experience.
+            Cùng xem những gì khách hàng của chúng tôi chia sẻ về trải nghiệm cùng Sofa cho Thú Cưng của họ.
           </p>
         </div>
 
