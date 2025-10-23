@@ -51,23 +51,25 @@ export function Products() {
           {galleryItems.map((item) => (
             <Card
               key={item.id}
-              className="overflow-hidden border border-primary/10 bg-background/95 shadow-sm transition-shadow hover:shadow-lg gap-0 py-0"
+              className="group overflow-hidden border border-primary/10 bg-background/95 shadow-sm transition-shadow hover:shadow-xl hover:border-primary/40 gap-0 py-0"
             >
               <div className="relative aspect-[4/3] overflow-hidden">
                 <img
                   src={item.image || "/placeholder.svg"}
                   alt={item.alt || item.title}
-                  className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 hover:scale-105"
+                  className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background/85 via-background/0 to-background/0" />
-                <div className="absolute bottom-4 left-4 rounded-full bg-background/90 px-3 py-1 text-xs font-semibold tracking-[0.2em] text-foreground shadow-sm">
+                <div className="absolute bottom-4 left-4 rounded-full bg-background/90 px-3 py-1 text-xs font-semibold tracking-[0.2em] text-foreground shadow-sm transition-transform duration-300 group-hover:-translate-y-1">
                   {item.stat}
                 </div>
               </div>
-              <div className="p-6 space-y-3">
-                <h3 className="text-xl font-bold text-[#FF1D58]">{item.title}</h3>
-                <p className="text-sm font-semibold uppercase tracking-widest text-primary">{item.caption}</p>
-                <p className="text-sm leading-relaxed text-foreground/80">{item.detail}</p>
+              <div className="p-6 space-y-3 transition-colors duration-300 group-hover:bg-primary/5">
+                <h3 className="text-xl font-bold text-[#FF1D58] group-hover:text-primary">{item.title}</h3>
+                <p className="text-sm font-semibold uppercase tracking-widest text-primary group-hover:text-[#FF1D58]">
+                  {item.caption}
+                </p>
+                <p className="text-sm leading-relaxed text-foreground/80 group-hover:text-foreground/90">{item.detail}</p>
               </div>
             </Card>
           ))}
