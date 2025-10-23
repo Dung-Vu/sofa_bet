@@ -45,16 +45,24 @@ export function Benefits() {
           {benefits.map((benefit, index) => {
             const Icon = benefit.icon
             return (
-              <Card key={index} className="p-8 hover:shadow-lg transition-shadow">
-                <div className="flex gap-4">
+              <Card
+                key={index}
+                className="group relative overflow-hidden rounded-2xl border border-primary/10 bg-background/95 p-8 transition-all duration-300 hover:-translate-y-1 hover:border-primary/40 hover:shadow-2xl"
+              >
+                <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-[#FF1D58] via-primary to-[#FF1D58] opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                <div className="flex gap-4 relative">
                   <div className="flex-shrink-0">
-                    <div className="flex items-center justify-center h-12 w-12 rounded-lg bg-primary/10">
-                      <Icon className="h-6 w-6 text-primary" />
+                    <div className="flex items-center justify-center h-12 w-12 rounded-xl bg-primary/10 transition-colors duration-300 group-hover:bg-[#FF1D58]/15">
+                      <Icon className="h-6 w-6 text-primary transition-transform duration-300 group-hover:scale-110 group-hover:text-[#FF1D58]" />
                     </div>
                   </div>
                   <div>
-                    <h3 className="text-lg font-bold text-foreground mb-2">{benefit.title}</h3>
-                    <p className="text-muted-foreground">{benefit.description}</p>
+                    <h3 className="text-lg font-bold text-foreground mb-2 transition-colors duration-300 group-hover:text-[#FF1D58]">
+                      {benefit.title}
+                    </h3>
+                    <p className="text-muted-foreground leading-relaxed transition-colors duration-300 group-hover:text-foreground/90">
+                      {benefit.description}
+                    </p>
                   </div>
                 </div>
               </Card>

@@ -5,8 +5,8 @@ export function Hero() {
   return (
     <section className="relative py-20 md:py-32 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid gap-12 md:grid-cols-[1.05fr_1fr] lg:gap-16 items-center">
-          <div className="order-2 md:order-1 space-y-6 text-center md:text-left">
+        <div className="grid grid-cols-1 gap-12 md:grid-cols-[1.05fr_1fr] lg:gap-16 items-center">
+          <div className="space-y-6 text-center md:text-left">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground text-balance leading-tight">
               Bobby Sofa Pet
             </h1>
@@ -29,9 +29,9 @@ export function Hero() {
             </div>
           </div>
 
-          <div className="order-1 md:order-2 relative h-80 sm:h-96 md:h-full">
-            <div className="grid h-full gap-4 grid-cols-2">
-              <div className="relative overflow-hidden rounded-2xl shadow-lg col-span-2 sm:col-span-1 sm:row-span-2">
+          <div className="relative h-72 sm:h-96 md:h-full">
+            <div className="grid h-full gap-4 grid-cols-1 sm:grid-cols-2">
+              <div className="relative overflow-hidden rounded-2xl shadow-lg sm:col-span-1 sm:row-span-2">
                 <img
                   src="/cozy-pet-sofa-with-dog-relaxing.jpg"
                   alt="Golden retriever resting on the Ordinaire Sofa beside a curious cat"
@@ -45,7 +45,7 @@ export function Hero() {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="relative overflow-hidden rounded-2xl shadow-lg col-span-2 sm:col-span-1">
+              <div className="relative overflow-hidden rounded-2xl shadow-lg">
                 <img
                   src="/block2.png"
                   alt="Top view of the Ordinaire Sofa showing generous seating space"
