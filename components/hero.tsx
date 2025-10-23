@@ -8,7 +8,7 @@ export function Hero() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground text-balance leading-tight">
-              Premium Comfort for Your Beloved Pet
+              Ordinaire Sofa For Pet
             </h1>
             <p className="text-lg text-muted-foreground max-w-lg leading-relaxed">
               Handcrafted sofas designed with your pet's comfort and your home's style in mind. Because your furry
